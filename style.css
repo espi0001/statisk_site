@@ -138,7 +138,7 @@ ol li:hover {
   gap: 50px;
   margin-top: 20px;
 }
-.purchasebox {
+.purchaseBox {
   background: #ef9273;
   color: #fef9f8;
   padding: 50px;
@@ -159,7 +159,7 @@ label {
   display: flex;
 }
 
-.purchasebox button {
+.purchaseBox button {
   display: block;
   margin-top: 1rem;
   width: 100%;

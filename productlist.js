@@ -33,9 +33,9 @@ function showProduct(product) {
     //produktet er onSale
     copy.querySelector("article").classList.add("onSale");
   }
-  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
-  copy.querySelector(".read_more").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".read_more").setAttribute("href", `product.html?id=${product.id}`);
 
   //appende
   document.querySelector("main").appendChild(copy);
