@@ -29,7 +29,7 @@ function showProduct(product) {
     //produktet er onSale
     copy.querySelector("article").classList.add("onSale");
   }
-  //   copy.querySelector("img").src = product.preview;
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 
   //appende
   document.querySelector("main").appendChild(copy);
