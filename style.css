@@ -65,22 +65,32 @@ a:hover {
   transition: 0.2s ease;
 }
 
-.kategorier {
+ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   margin-top: 20px;
 }
 
-.kasser {
+ol li {
   border: 2px solid #0d0d0d;
   padding: 20px;
   text-align: center;
+  list-style-type: none;
   a {
     text-decoration: none;
     font-size: 1.5rem;
   }
 }
+
+ol li:hover {
+  background-color: #ef9273;
+  transition: 0.2s ease;
+  a:hover {
+    color: #0d0d0d;
+  }
+}
+
 /*ProductList*/
 .produktliste {
   display: grid;
