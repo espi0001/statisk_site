@@ -9,8 +9,15 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 function showProduct(product) {
   console.log(product);
 
-  document.querySelector(".purchaseBox h3").textContent = product.productdisplayname;
+  document.querySelector(".purchaseBox .productdisplayname").textContent = product.productdisplayname;
   document.querySelector(".purchaseBox .brand").textContent = product.brandname;
+  document.querySelector(".purchaseBox .articletype").textContent = product.articletype;
+
+  document.querySelector(".info .productdisplayname").textContent = product.productdisplayname;
+  document.querySelector(".info .id").textContent = product.id;
+  document.querySelector(".info .subcategory").textContent = product.subcategory;
+  document.querySelector(".info .brand").textContent = product.brand;
+  document.querySelector(".info .brandbio").textContent = product.brandbio;
 
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
