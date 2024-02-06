@@ -18,6 +18,8 @@ function showProduct(product) {
   document.querySelector(".info .subcategory").textContent = product.subcategory;
   document.querySelector(".info .brand").textContent = product.brand;
   document.querySelector(".info .brandbio").textContent = product.brandbio;
+  document.querySelector(".info .gender").textContent = product.gender;
+  document.querySelector(".info .season").textContent = product.season;
 
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }

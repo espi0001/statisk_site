@@ -28,6 +28,8 @@ function showProduct(product) {
   copy.querySelector(".articletype").textContent = product.articletype;
   copy.querySelector(".brand").textContent = product.brandname;
   copy.querySelector(".price").textContent = product.price;
+  copy.querySelector(".discounted .relid").textContent = product.relid;
+  copy.querySelector(".discounted .discount").textContent = product.discount;
 
   if (product.discount) {
     //produktet er onSale

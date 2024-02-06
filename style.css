@@ -115,6 +115,10 @@ ol li:hover {
   justify-content: space-between;
 }
 
+/* .prev {
+  display: none;
+} */
+
 .discounted p:last-child {
   background: red;
   padding: 0.2rem;
@@ -181,13 +185,22 @@ label {
   h4 {
     font-weight: bold;
   }
-  p {
-    margin-left: 10px;
-  }
+
   dt {
     font-weight: 700;
     margin-top: 30px;
   }
+  dd {
+    margin-top: 30px;
+  }
 }
+
+.info dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 @media (min-width: 800px) {
 }
