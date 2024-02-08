@@ -27,14 +27,20 @@ function showProduct(product) {
   }
   copy.querySelector(".articletype").textContent = product.articletype;
   copy.querySelector(".brand").textContent = product.brandname;
-  copy.querySelector(".price").textContent = product.price;
-  copy.querySelector(".discounted .relid").textContent = product.relid;
-  copy.querySelector(".discounted .discount").textContent = product.discount;
+  copy.querySelector(".price").textContent = product.price + ",-";
+  copy.querySelector(".prev_price").textContent = "Prev: " + product.relid;
 
   if (product.discount) {
     //produktet er onSale
-    copy.querySelector("article").classList.add("onSale");
+    copy.querySelector(".price").remove();
+    copy.querySelector(".discounted .new_price").textContent = "Now: " + product.price + ",-";
+    copy.querySelector(".discounted .the_discount").textContent = "Discount: " + product.discount + "%";
+  } else {
+    copy.querySelector(".prev_price").remove();
+    copy.querySelector(".discounted .new_price").remove();
+    copy.querySelector(".discounted .the_discount").remove();
   }
+
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   copy.querySelector(".read_more").setAttribute("href", `product.html?id=${product.id}`);

@@ -91,6 +91,37 @@ ol li:hover {
   }
 }
 
+/* Breadcrumb start */
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1rem;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  font-size: 1rem;
+}
+
+ul.breadcrumb li a:hover {
+  color: #eb4e27;
+}
+/* Breadcrumb slut */
+
 /*ProductList*/
 .produktliste {
   display: grid;
@@ -115,12 +146,12 @@ ol li:hover {
   justify-content: space-between;
 }
 
-/* .prev {
+.hide {
   display: none;
-} */
+}
 
 .discounted p:last-child {
-  background: red;
+  background: rgba(255, 0, 0, 0.662);
   padding: 0.2rem;
 }
 

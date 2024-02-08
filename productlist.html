@@ -26,10 +26,10 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="category.html">Kategori</a></li>
-                <li><a href="productlist.html">Produktliste</a></li>
-                <li><a href="product.html">Produkt</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="productlist.html">Productlist</a></li>
+                <li><a href="product.html">Product</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -39,193 +39,35 @@
         </nav>
     </header>
     <main class="produktliste">
-        <h1>Produktliste</h1>
-
+        <h1>Productlist</h1>
 
         <template id="smallProductTemplate">
             <article class="smallProduct">
+
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="billede">
                 <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
 
                 <p><span class="articletype">Tshirts</span> | <span class="brand">Nike</span></p>
-                <p><span>Now </span> <span class="price">1595</span>,-</p>
+
+                <div class="price">
+                    <p><span>Prev.</span> DKK 1595,-</p>
+                </div>
+
+                <div class="prev_price">
+                    <p>FØR DKK 1595,-</p>
+                </div>
+
+
                 <div class="discounted">
-                    <p><span class="prev">Prev</span> <span class="relid">1560</span>,-</p>
-                    <p>- <span class="discount">34%</span>%</p>
+                    <p class="new_price">Now DKK 1849,-</p>
+                    <p class="the_discount">INGEN FUCKING RABAT</p>
                 </div>
                 <a class="read_more" href="product.html">Read More</a>
 
             </article>
         </template>
 
-        <!-- <article class="smallProduct">
 
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                    alt="Sahara Team India Fanwear Round Neck Jersey">
-                <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-                <div class="subtle">
-                    <p>Tshirts | Nike</p>
-                </div>
-                <div class="price">
-                    <p>DKK 895,-</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-
-            <article class="smallProduct soldOut onSale">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Blue T20 Indian Cricket Jersey">
-                <h3>Blue T20 Indian Cricket Jersey</h3>
-                <div class="subtle">
-                    <p>Tshirts | Nike</p>
-                </div>
-                <div class="price">
-                    <p><span>Prev.</span> DKK 1595,-</p>
-                </div>
-                <div class="discounted">
-                    <p>Now DKK 1148,-</p>
-                    <p>-28%</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-
-
-            <article class="smallProduct onSale">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Mean Team India Cricket Jersey">
-                <h3>Mean Team India Cricket Jersey</h3>
-                <div class="subtle">
-                    <p>Tshirts | Nike</p>
-                </div>
-                <div class="price">
-                    <p><span>Prev.</span> DKK 2495,-</p>
-                </div>
-
-                <div class="discounted">
-                    <p>Now DKK 2372,-</p>
-                    <p>-45%</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-
-            <article class="smallProduct onSale">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Deck Navy Blue Backpackn">
-                <h3>Deck Navy Blue Backpack</h3>
-                <div class="subtle">
-                    <p>Backpacks | Puma</p>
-                </div>
-                <div class="price">
-                    <p><span>Prev.</span> DKK 1299,-</p>
-                </div>
-                <div class="discounted">
-                    <p>Now DKK 585,-</p>
-                    <p>-55%</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-
-            <article class="smallProduct">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="Sports	Big Cat Backpack Black">
-                <h3>Sports Big Cat Backpack Black</h3>
-                <div class="subtle">
-                    <p>Backpacks | Puma</p>
-                </div>
-                <div class="price">
-                    <p>DKK 1299,-</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-
-            <article class="smallProduct onSale">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp" alt="Black Fleece Jacket">
-                <h3>Black Fleece Jacket</h3>
-                <div class="subtle">
-                    <p>Jackets | Puma</p>
-                </div>
-                <div class="price">
-                    <p><span>Prev.</span> DKK 3999,-</p>
-                </div>
-                <div class="discounted">
-                    <p>Now DKK 2040,-</p>
-                    <p>-49%</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-
-            <article class="smallProduct">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Tee">
-                <h3>Tee</h3>
-                <div class="subtle">
-                    <p>Tshirts | Puma</p>
-                </div>
-                <div class="price">
-                    <p>DKK 1899,-</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-            <article class="smallProduct soldOut onSale">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="Track Jacket">
-                <h3>Track Jackety</h3>
-                <div class="subtle">
-                    <p>Jackets | Puma</p>
-                </div>
-                <div class="price">
-                    <p><span>Prev.</span> DKK 4299,-</p>
-                </div>
-                <div class="discounted">
-                    <p>Now DKK 1849,-</p>
-                    <p>-57%</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-            <article class="smallProduct">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1531.webp" alt="Grey Solid Round Neck T-Shirt">
-                <h3>Grey Solid Round Neck T-Shirt</h3>
-                <div class="subtle">
-                    <p>Tshirts | Puma</p>
-                </div>
-                <div class="price">
-                    <p>DKK 799,-</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article>
-
-            <article class="smallProduct">
-
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1532.webp" alt="Grey Leaping Cat T-shirt">
-                <h3>Grey Leaping Cat T-shirt</h3>
-                <div class="subtle">
-                    <p>Tshirts | Puma</p>
-                </div>
-                <div class="price">
-                    <p>DKK 899,-</p>
-                </div>
-                <a href="produkt.html">Read More</a>
-
-            </article> -->
 
     </main>
 

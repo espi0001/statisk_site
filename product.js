@@ -9,6 +9,10 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 function showProduct(product) {
   console.log(product);
 
+  document.querySelector(".breadcrumb .bread_category").textContent = product.category;
+  document.querySelector(".breadcrumb .bread_subcategory").textContent = product.subcategory;
+  document.querySelector(".breadcrumb .productdisplayname").textContent = product.productdisplayname;
+
   document.querySelector(".purchaseBox .productdisplayname").textContent = product.productdisplayname;
   document.querySelector(".purchaseBox .brand").textContent = product.brandname;
   document.querySelector(".purchaseBox .articletype").textContent = product.articletype;
